@@ -1,0 +1,80 @@
+#include<stdio.h>
+#include<conio.h>
+#define PI 3.14
+
+
+main()
+{
+	float r, area;
+	float l, length;
+	float b, h;
+	float p, n;
+	clrscr();
+
+	printf("Question : 1\n");
+
+	printf("Enter Radius :");
+	scanf("%f",&r);
+
+	printf("\n");
+	area = PI * r * r;
+	printf("Area of Circle is : %0.2f\n",area);
+
+	printf("\n");
+	printf("\n");
+	printf("\n");
+
+	printf("Question : 2\n");
+
+	printf("Enter Length :");
+	scanf("%f",&l);
+
+	printf("\n");
+	length = l * l;
+	printf("Length of Rectangle :%0.2f\n",length);
+
+	printf("\n");
+	printf("\n");
+	printf("\n");
+
+	printf("Question : 3\n");
+	printf("Enter Breadth :");
+	scanf("%f",&b);
+	printf("Enter Height :");
+	scanf("%f",&h);
+
+	printf("\n");
+	area = 0.5 * b * h;
+	printf("Area of Triangle : %0.2f\n",area);
+
+	printf("\n");
+	printf("\n");
+	printf("\n");
+
+	printf("Question : 4\n");
+
+	printf("Enter Principal Amount : ");
+	scanf("%f",&p);
+	printf("Enter Rate :");
+	scanf("%f",&r);
+	printf("Enter Time in a month :");
+	scanf("%f",&n);
+
+	area = (p * r * n) / 100;
+	printf("\n");
+	printf("Simple interest is : %f0.2\n",area);
+
+	printf("\n");
+	printf("\n");
+	printf("\n");
+
+	printf("Question : 5\n");
+	printf("Enter Radius :");
+	scanf("%f",&r);
+
+	printf("\n");
+	area = 2 * PI * r;
+	printf("Perimeter of the circle : %0.2f\n",area);
+	getch();
+	return 0;
+}
