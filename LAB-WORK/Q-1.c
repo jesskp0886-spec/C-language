@@ -1,25 +1,25 @@
 #include <stdio.h>
 
 int main() {
-    char str[100] = "HELLO";
-    int i, length;
-    char temp;  
+    char str[100];
+    int i, length = 0;
+    char temp[100];  
 
-    length = 0;
+    printf("Before:");
+    scanf("%s",str);
+
+
     while (str[length] != '\0') {
         length++;
     }
     
-    printf("Before: %s\n", str);
-    
-
-    for (i = 0; i < length/2; i++) {
-        temp = str[i];
-        str[i] = str[length - i - 1];
-        str[length - i - 1] = temp;
+    for (i = 0; i < length; i++) {
+        temp[i] = str[length - i - 1];
     }
-    
-    printf("After: %s\n", str);
+
+    temp[length] = '\0';
+
+    printf("After: %s\n", temp);
     
     return 0;
 }
